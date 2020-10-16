@@ -1,5 +1,4 @@
 import Survivor as surv
-import random as rand
 
 # CHANGEABLE VARIABLES
 GENSIZE = 500
@@ -25,7 +24,7 @@ def main():
             count += generation[i][0]
         generation.sort(reverse = True, key = lambda i: i[0])
         
-        #
+        # Stat tracking
         print("Generation: "+str(iterations))
         print("Best Fitness: "+str(round(generation[0][0],5)))
         print("Worst Fitness: "+str(round(generation[GENSIZE-1][0],5)))
