@@ -72,7 +72,6 @@ def main():
     # Simulation is done, find the best player and print (NOTE: this can take 
     # a long time because every player plays every other player)
     for i in range(GENSIZE):
-        print(i)
         for j in range(i+1,GENSIZE):
             result = generation[i][0].runSim(generation[j][0])
             if result > 0:
